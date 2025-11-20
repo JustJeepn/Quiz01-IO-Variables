@@ -376,6 +376,7 @@
             noItemsBox.Name = "noItemsBox";
             noItemsBox.Size = new Size(320, 27);
             noItemsBox.TabIndex = 31;
+            noItemsBox.TextChanged += noItemsBox_TextChanged;
             // 
             // costBox
             // 
@@ -392,6 +393,7 @@
             q04Button.TabIndex = 33;
             q04Button.Text = "Code Me!";
             q04Button.UseVisualStyleBackColor = true;
+            q04Button.Click += q04Button_Click;
             // 
             // q03Button
             // 
@@ -401,6 +403,7 @@
             q03Button.TabIndex = 34;
             q03Button.Text = "Code Me!";
             q03Button.UseVisualStyleBackColor = true;
+            q03Button.Click += q03Button_Click;
             // 
             // q4OutputLabel
             // 

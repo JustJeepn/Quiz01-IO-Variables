@@ -3,6 +3,10 @@ namespace Quiz01_IO_Variables
     public partial class Form1 : Form
     {
         string userName;
+        int numItems = 0;
+        double itemPrice = 2.25;
+        double taxAmount = 0;
+        double taxRate = 0.13;
         public Form1()
         {
             InitializeComponent();
@@ -42,6 +46,26 @@ namespace Quiz01_IO_Variables
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void q03Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noItemsBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void q04Button_Click(object sender, EventArgs e)
+        {
+            numItems = Convert.ToInt16(noItemsBox.Text);
+            taxAmount = taxRate * itemPrice;
+            q4OutputLabel.Text = itemPrice + taxAmount;
+            q4OutputLabel.Text = taxAmount.ToString("C");
+            q4OutputLabel.Text = itemPrice.ToString("C");
 
         }
     }
